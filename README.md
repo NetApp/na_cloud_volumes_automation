@@ -61,7 +61,7 @@ Read more on provider version control.
 
 ## Implementation
 
-Detailed Steps can be found at: https://docs.netapp.com/us-en/netapp-solutions_dhruv_cloud_volumes_tf/automation/cloud_volumes_terraform.html
+Detailed Steps can be found at: https://docs.netapp.com/us-en/netapp-solutions/automation/cloud_volumes_terraform.html
 
 For running specific modules, refer to the READMEs available in the respective modules.
 
