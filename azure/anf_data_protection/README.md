@@ -47,15 +47,15 @@ Read more on provider version control.
 ## Procedure
 In order to run the template:
 1. Clone the repository.
-   
+
     ```git clone https://github.com/NetApp-Automation/na_cloud_volumes_automation.git```
 
 2. Navigate to the desired folder
-   
-    ```cd na_cloud_volumes_deploy\anf_data_protection```
+
+    ```cd na_cloud_volumes_deploy/anf_data_protection```
 
 3. Login to your Azure CLI (Azure CLI must be installed).
-   
+
     ```az login```
 
 4. Update the variable values in ```vars/azure_anf_data_protection.tfvars```.
@@ -63,19 +63,19 @@ In order to run the template:
 
 
 5. Initialize the Terraform repository to install all the pre-requisites and prepare for deployment.
-   
+
     ```terraform init```
 
 6. Verify the terraform files using terraform validate command.
-   
+
     ```terraform validate```
 
 7. Make a dry run of the configuration to get a preview of all the changes expected by the deployment.
-   
+
     ```terraform plan"```
 
 8. Run the deployment
-   
+
     ```terraform apply```
 
 To delete the deployment

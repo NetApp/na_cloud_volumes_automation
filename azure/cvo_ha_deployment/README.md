@@ -1,37 +1,37 @@
 # na_terraform_az_cvo_ha
 Terraform template to deploy an HA pair Cloud Volumes ONTAP (CVO) on Microsoft Azure from scratch.
 
-## License 
-By accessing, downloading, installing or using the content in this repository, you agree the terms of the License laid out in License file. 
+## License
+By accessing, downloading, installing or using the content in this repository, you agree the terms of the License laid out in License file.
 
-Note that there are certain restrictions around producing and/or sharing any derivative works with the content in this repository. Please make sure you read the terms of the License before using the content. If you do not agree to all of the terms, do not access, download or use the content in this repository. 
+Note that there are certain restrictions around producing and/or sharing any derivative works with the content in this repository. Please make sure you read the terms of the License before using the content. If you do not agree to all of the terms, do not access, download or use the content in this repository.
 
 Copyright: 2022 NetApp Inc.  
 
 
 ## Terraform Template for Cloud Volumes ONTAP (CVO) High Availability
-This is an archive of Terraform configuration files to deploy Cloud Volumes ONTAP (CVO)   HA pair using Terraform. 
+This is an archive of Terraform configuration files to deploy Cloud Volumes ONTAP (CVO)   HA pair using Terraform.
 
 These templates use "netapp-cloudmanager" terraform provider.
 
- 
-## Folder Contents 
+
+## Folder Contents
 This folder contains various deployment and configuration scenarios for Cloud Volumes ONTAP (CVO) HA pair deployment.
 
-## Requirements 
-1. Terraform >= 0.13 
+## Requirements
+1. Terraform >= 0.13
 2. Cloud Provider Account – Azure
-3. Host machine (any OS supported by Terraform) 
+3. Host machine (any OS supported by Terraform)
 4. JQ (sudo apt-get install jq or equivalent)
 5. Connector created on Cloud Manager through the script should have connectivity to the host from where this terraform script is running.
 
-## Provider documentation 
+## Provider documentation
 The documentation is available at: https://registry.terraform.io/providers/NetApp/netapp-cloudmanager/latest/docs
 
-### Controlling the provider version 
-Note that you can also control the provider version. This is controlled by a required_providers block in your Terraform configuration. 
+### Controlling the provider version
+Note that you can also control the provider version. This is controlled by a required_providers block in your Terraform configuration.
 
-The syntax is as follows: 
+The syntax is as follows:
 
 ```
 terraform {
@@ -44,48 +44,48 @@ terraform {
 }
 ```
 
-Read more on provider version control. 
+Read more on provider version control.
 
 ## Procedure
 In order to run the template:
 1. Clone the repository.
-   
+
     ```git clone https://github.com/NetApp-Automation/na_cloud_volumes_automation.git```
 
 2. Navigate to the desired folder
-   
-    ```cd na_cloud_volumes_deploy\cvo_ha_deployment```
 
-3. Login to your Azure CLI (Azure CLI must be installed). 
-   
+    ```cd na_cloud_volumes_deploy/cvo_ha_deployment```
+
+3. Login to your Azure CLI (Azure CLI must be installed).
+
     ```az login```
 
-4. Update the variables in ```vars\azure_cvo_ha_deployment.tfvars```.  
-      
+4. Update the variables in ```vars/azure_cvo_ha_deployment.tfvars```.  
+
 5. Initialize the Terraform repository to install all the pre-requisites and prepare for deployment.
-   
+
     ```terraform init```
 
 6. Verify the terraform files using terraform validate command.
-   
+
     ```terraform validate```
 
 7. Make a dry run of the configuration to get a preview of all the changes expected by the deployment.
-   
+
     ```terraform plan```
 
 8. Run the deployment
-   
+
     ```terraform apply```
 
 To delete the deployment
 
   ```terraform destroy```
 
-## Recipies: 
+## Recipies:
 
 ### HA Pair Instance
-This template will deploy a HA pair Cloud Volumes ONTAP (CVO) into the designated Azure subnet. 
+This template will deploy a HA pair Cloud Volumes ONTAP (CVO) into the designated Azure subnet.
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -122,5 +122,5 @@ This template will deploy a HA pair Cloud Volumes ONTAP (CVO) into the designate
 | `az_application_key` | String | (Required) The Application Key of the application/service principal registered in Azure. |
 
 
-## Author Information 
-NetApp Solutions Engineering Team 
+## Author Information
+NetApp Solutions Engineering Team
