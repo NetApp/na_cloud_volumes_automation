@@ -305,7 +305,7 @@ module "aws_fsx" {
 }
 
 
-module gcp_single_node {
+module "gcp_single_node" {
     source = ".//gcp/cvo_single_node_deployment"
 
     #refresh token
@@ -338,7 +338,7 @@ module gcp_single_node {
 
 }
 
-module gcp_ha {
+module "gcp_ha" {
     source = ".//gcp/cvo_ha_deployment"
 
     #refresh token
@@ -387,6 +387,6 @@ module gcp_ha {
 
 }
 
-module gcp_cvs_volume {
+module "gcp_cvs_volume" {
 
 }
