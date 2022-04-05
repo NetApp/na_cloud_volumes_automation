@@ -1,3 +1,4 @@
+/*
 #refresh token
 refresh_token = "<refresh_token>"
 
@@ -7,7 +8,6 @@ aws_connector_deploy_bool = true
 #if aws_connector_deploy_bool is set to false
 aws_connector_client_id = "<connector_client_id>"
 
-/*
 #if aws_connector_deploy_bool is set to true
 aws_connector_name = "<aws_connector_name>"
 aws_connector_region = "<aws_region>"

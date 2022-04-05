@@ -53,7 +53,7 @@ module "anf_data_protection" {
     az_netapp_vol_service_level_secondary = var.az_netapp_vol_service_level_secondary
     az_netapp_vol_protocol_secondary = var.az_netapp_vol_protocol_secondary
     az_netapp_vol_storage_quota_secondary = var.az_netapp_vol_storage_quota_secondary
-    
+
 }
 
 module "anf_dual_protocol" {
@@ -74,7 +74,7 @@ module "anf_dual_protocol" {
     az_netapp_vol_protocol1 = var.az_netapp_vol_protocol1
     az_netapp_vol_protocol2 = var.az_netapp_vol_protocol2
     az_netapp_vol_storage_quota = var.az_netapp_vol_storage_quota
-    
+
     #smb server details
     az_smb_server_username = var.az_smb_server_username
     az_smb_server_password = var.az_smb_server_password
@@ -122,12 +122,12 @@ module "az_cvo_single_node_deployment" {
     az_connector_account_id = var.az_connector_account_id
     az_connector_admin_password = var.az_connector_admin_password
     az_connector_admin_username = var.az_connector_admin_username
-    
+
     #azure service principal credentials
     az_tenant_id = var.az_tenant_id
     az_application_id = var.az_application_id
     az_application_key = var.az_application_key
-    
+
     #cvo details
     az_cvo_name = var.az_cvo_name
     az_cvo_location = var.az_cvo_location
@@ -304,3 +304,89 @@ module "aws_fsx" {
 
 }
 
+
+module gcp_single_node {
+    source = ".//gcp/cvo_single_node_deployment"
+
+    #refresh token
+    refresh_token = var.refresh_token
+
+    #connector details
+    gcp_connector_deploy_bool = var.gcp_connector_deploy_bool
+
+    #if aws_connector_deploy_bool is set to false
+    gcp_connector_client_id = var.gcp_connector_client_id
+
+    #if aws_connector_deploy_bool is set to true
+    gcp_connector_name = var.gcp_connector_name
+    gcp_connector_project_id = var.gcp_connector_project_id
+    gcp_connector_zone = var.gcp_connector_zone
+    gcp_connector_company = var.gcp_connector_company
+    gcp_connector_service_account_email = var.gcp_connector_service_account_email
+    gcp_connector_service_account_path = var.gcp_connector_service_account_path
+    gcp_connector_account_id = var.gcp_connector_account_id
+
+    #cvo details
+    gcp_cvo_name = var.gcp_cvo_name
+    gcp_cvo_project_id = var.gcp_cvo_project_id
+    gcp_cvo_zone = var.gcp_cvo_zone
+    gcp_cvo_gcp_service_account = var.gcp_cvo_gcp_service_account
+    gcp_cvo_svm_password = var.gcp_cvo_svm_password
+    gcp_cvo_workspace_id = var.gcp_cvo_workspace_id
+    gcp_cvo_license_type = var.gcp_cvo_license_type
+    gcp_cvo_capacity_package_name = var.gcp_cvo_capacity_package_name
+
+}
+
+module gcp_ha {
+    source = ".//gcp/cvo_ha_deployment"
+
+    #refresh token
+    refresh_token = var.refresh_token
+
+    #connector details
+    gcp_connector_deploy_bool = var.gcp_connector_deploy_bool
+
+    #if aws_connector_deploy_bool is set to false
+    gcp_connector_client_id = var.gcp_connector_client_id
+
+    #if aws_connector_deploy_bool is set to true
+    gcp_connector_name = var.gcp_connector_name
+    gcp_connector_project_id = var.gcp_connector_project_id
+    gcp_connector_zone = var.gcp_connector_zone
+    gcp_connector_company = var.gcp_connector_company
+    gcp_connector_service_account_email = var.gcp_connector_service_account_email
+    gcp_connector_service_account_path = var.gcp_connector_service_account_path
+    gcp_connector_account_id = var.gcp_connector_account_id
+
+    #cvo details
+    gcp_cvo_is_ha = var.gcp_cvo_is_ha
+    gcp_cvo_name = var.gcp_cvo_name
+    gcp_cvo_project_id = var.gcp_cvo_project_id
+    gcp_cvo_zone = var.gcp_cvo_zone
+    gcp_cvo_node1_zone = var.gcp_cvo_node1_zone
+    gcp_cvo_node2_zone = var.gcp_cvo_node2_zone
+    gcp_cvo_mediator_zone = var.gcp_cvo_mediator_zone
+    gcp_cvo_vpc_id = var.gcp_cvo_vpc_id
+    gcp_cvo_subnet_id = var.gcp_cvo_subnet_id
+    gcp_cvo_vpc0_node_and_data_connectivity = var.gcp_cvo_vpc0_node_and_data_connectivity
+    gcp_cvo_vpc1_cluster_connectivity = var.gcp_cvo_vpc1_cluster_connectivity
+    gcp_cvo_vpc2_ha_connectivity = var.gcp_cvo_vpc2_ha_connectivity
+    gcp_cvo_vpc3_data_replication = var.gcp_cvo_vpc3_data_replication
+    gcp_cvo_subnet0_node_and_data_connectivity = var.gcp_cvo_subnet0_node_and_data_connectivity
+    gcp_cvo_subnet1_cluster_connectivity = var.gcp_cvo_subnet1_cluster_connectivity
+    gcp_cvo_subnet2_ha_connectivity = var.gcp_cvo_subnet2_ha_connectivity
+    gcp_cvo_subnet3_data_replication = var.gcp_cvo_subnet3_data_replication
+    gcp_cvo_gcp_service_account = var.gcp_cvo_gcp_service_account
+    gcp_cvo_svm_password = var.gcp_cvo_svm_password
+    gcp_cvo_workspace_id = var.gcp_cvo_workspace_id
+    gcp_cvo_license_type = var.gcp_cvo_license_type
+    gcp_cvo_capacity_package_name = var.gcp_cvo_capacity_package_name
+    gcp_cvo_gcp_volume_size = var.gcp_cvo_gcp_volume_size
+    gcp_cvo_gcp_volume_size_unit = var.gcp_cvo_gcp_volume_size_unit
+
+}
+
+module gcp_cvs_volume {
+
+}

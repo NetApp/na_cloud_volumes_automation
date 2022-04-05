@@ -562,3 +562,174 @@ variable "az_snapshot_id" {
   description = "Snapshot ID using which new ANF volume will be created."
   default = ""
 }
+
+variable "gcp_connector_deploy_bool" {
+  description = "Do you want to create a new GCP Connector?"
+  type = bool
+  default = true
+}
+
+variable "gcp_connector_client_id" {
+  description = "ID of GCP Connector instance"
+  default = ""
+}
+
+variable "gcp_connector_name" {
+  description = "Name of the GCP Connector"
+  default = ""
+}
+
+variable "gcp_connector_project_id" {
+    description = "Project ID for GCP Connector deployment"
+    default = ""
+}
+
+variable "gcp_connector_zone" {
+    description = "Zone for GCP Connector"
+    default = ""
+}
+
+variable "gcp_connector_company" {
+  description = "Name of the org"
+  default = ""
+}
+
+variable "gcp_connector_instance_type" {
+  description = "Instance type for gcp connector"
+  default = ""
+}
+
+variable "gcp_connector_service_account_email" {
+  description = "Service Account E-Mail"
+  default = ""
+}
+
+variable "gcp_connector_service_account_path" {
+  description = "Path to the JSON GCP Key"
+  default = ""
+}
+
+variable "gcp_connector_account_id" {
+  description = "Connector account ID"
+  default = ""
+}
+
+variable "gcp_cvo_is_ha"{
+  description = "Do you want to deploy CVO in HA pair?"
+  type = bool
+  default = false
+}
+
+variable "gcp_cvo_name" {
+  description = "Name of the CVO Instance"
+  default = ""
+}
+
+variable "gcp_cvo_project_id" {
+    description = "Project ID for GCP CVO deployment"
+    default = ""
+}
+
+variable "gcp_cvo_zone" {
+  description = "Zone for NetApp CVO"
+  default = ""
+}
+
+variable "gcp_cvo_node1_zone" {
+  description = "Zone for NetApp CVO Node 1"
+  default = ""
+}
+
+variable "gcp_cvo_node2_zone" {
+  description = "Zone for NetApp CVO Zone 2"
+  default = ""
+}
+
+variable "gcp_cvo_mediator_zone" {
+  description = "Zone for NetApp CVO Mediator"
+  default = ""
+}
+
+variable "gcp_cvo_subnet_id" {
+  description = "CVO Subnet ID for CVO"
+  default = ""
+}
+
+variable "gcp_cvo_subnet0_node_and_data_connectivity" {
+  description = "CVO Subnet ID for node1"
+  default = ""
+}
+
+variable "gcp_cvo_subnet1_cluster_connectivity" {
+  description = "CVO Subnet ID for node2"
+  default = ""
+}
+
+variable "gcp_cvo_subnet2_ha_connectivity" {
+  description = "CVO Subnet ID for node3"
+  default = ""
+}
+
+variable "gcp_cvo_subnet3_data_replication" {
+  description = "CVO Subnet ID for node4"
+  default = ""
+}
+
+variable "gcp_cvo_vpc_id" {
+  description = "CVO VPC ID"
+  default = ""
+}
+
+variable "gcp_cvo_vpc0_node_and_data_connectivity" {
+  description = "CVO VPC ID node1"
+  default = ""
+}
+
+variable "gcp_cvo_vpc1_cluster_connectivity" {
+  description = "CVO VPC ID node2"
+  default = ""
+}
+
+variable "gcp_cvo_vpc2_ha_connectivity" {
+  description = "CVO VPC ID node3"
+  default = ""
+}
+
+variable "gcp_cvo_vpc3_data_replication" {
+  description = "CVO VPC ID node4"
+  default = ""
+}
+
+variable "gcp_cvo_gcp_service_account" {
+  description = "Service Account E-Mail"
+  default = ""
+}
+
+variable "gcp_cvo_svm_password" {
+  description = "CVO SVM Password"
+  default = ""
+}
+
+variable "gcp_cvo_workspace_id" {
+  description = "CVO Cloud Manager Workspace ID"
+  default = ""
+}
+
+variable "gcp_cvo_license_type" {
+  description = "CVO License Type"
+  default = ""
+}
+
+variable "gcp_cvo_capacity_package_name" {
+  description = "CVO Capacity Package Name"
+  default = ""
+}
+
+variable "gcp_cvo_gcp_volume_size" {
+  description = "CVO Volume Size"
+  default = ""
+}
+
+variable "gcp_cvo_gcp_volume_size_unit" {
+  description = "CVO Volume Size Unit"
+  default = ""

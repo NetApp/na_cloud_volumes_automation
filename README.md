@@ -16,7 +16,7 @@ These configuration files use NetApp cloud manager terraform provider and cloud 
 ## Folder Contents
 **AWS:** This folder contains various deployment and configuration scenarios for NetApp Cloud Volumes on AWS.  
 **Azure:** This folder contains various deployment and configuration scenarios for NetApp Cloud Volumes on Microsoft Azure.  
-
+**GCP:** This folder contains various deployment and configuration scenarios for NetApp Cloud Volumes on Google Cloud Platform.
 
 ## Requirements
 1. Terraform >= 0.13
