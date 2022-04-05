@@ -20,8 +20,8 @@ In order to run the template:
     - AWS Secret Access Key [None]: secretkey
     - Default region name [None]: us-west-2
     - Default output format [None]:
-    
-4. Update the variable values in ```vars/aws_fsx_deployment.tfvars```
+
+4. Update the variable values in ```terraform.tfvars```
       + You can choose to deploy the connector by setting the variable "aws_connector_deploy_bool" value to true/false.
 
 5. Initialize the Terraform repository to install all the pre-requisites and prepare for deployment.

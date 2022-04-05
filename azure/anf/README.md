@@ -47,35 +47,35 @@ Read more on provider version control.
 ## Procedure
 In order to run the template:
 1. Clone the repository.
-   
+
     ```git clone https://github.com/NetApp-Automation/na_cloud_volumes_automation.git```
-  
+
 2. Navigate to the desired folder
-   
+
     ```cd na_cloud_volumes_deploy/anf```
 
 3. Login to your Azure CLI (Azure CLI must be installed).
-   
+
     ```az login```
 
-4. Update the variable values in ```vars/azure_anf.tfvars```.  
+4. Update the variable values in ```terraform.tfvars```.  
       + You can choose to deploy the ANF volume using an existing vnet and subnet by setting the variable "vnet_creation_bool" and "subnet_creation_bool" value to false and supplying the "subnet_id_for_anf_vol". You can also set those values to true and create a new vnet and subnet in which case, the subnet ID will automatically be taken from the newly created subnet.
 
 
 5. Initialize the Terraform repository to install all the pre-requisites and prepare for deployment.
-   
+
     ```terraform init```
 
 6. Verify the terraform files using terraform validate command.
-   
+
     ```terraform validate```
 
 7. Make a dry run of the configuration to get a preview of all the changes expected by the deployment.
-   
+
     ```terraform plan```
 
 8. Run the deployment
-   
+
     ```terraform apply"```
 
 To delete the deployment

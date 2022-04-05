@@ -60,7 +60,7 @@ In order to run the template:
 
     ```az login```
 
-4. Update the variables in ```vars/azure_cvo_single_node_deployment.tfvars```.
+4. Update the variables in ```terraform.tfvars```.
 
 5. Initialize the Terraform repository to install all the pre-requisites and prepare for deployment.
 

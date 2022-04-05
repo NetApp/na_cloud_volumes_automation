@@ -58,7 +58,7 @@ In order to run the template:
 
     ```az login```
 
-4. Update the variable values in ```vars/azure_anf_dual_protocol.tfvars```.
+4. Update the variable values in ```terraform.tfvars```.
       + You can choose to deploy the ANF volume using an existing vnet and subnet by setting the variable "vnet_creation_bool" and "subnet_creation_bool" value to false and supplying the "subnet_id_for_anf_vol". You can also set those values to true and create a new vnet and subnet in which case, the subnet ID will automatically be taken from the newly created subnet.
 
 
