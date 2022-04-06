@@ -1,14 +1,6 @@
 # na_terraform_anf_vol_from_snapshot
 Terraform template to deploy Azure Netapp Files (ANF) volume using a snapshot on Microsoft Azure from scratch.
 
-## License
-By accessing, downloading, installing or using the content in this repository, you agree the terms of the License laid out in License file.
-
-Note that there are certain restrictions around producing and/or sharing any derivative works with the content in this repository. Please make sure you read the terms of the License before using the content. If you do not agree to all of the terms, do not access, download or use the content in this repository.
-
-Copyright: 2022 NetApp Inc.  
-
-
 ## Terraform Template for Azure Netapp Files (ANF) Volume from Snapshot
 This is an archive of Terraform configuration files to deploy Azure Netapp Files (ANF) using a snapshot via Terraform.
 
@@ -104,6 +96,12 @@ This template will deploy a single ANF Volume using snapshot into the designated
 | `az_netapp_vol_storage_quota` | String | (Required) The maximum Storage Quota allowed for a file system in Gigabytes. |
 | `az_snapshot_id` | String | (Required) Snapshot ID using which new ANF volume will be created. |
 
+## License
+By accessing, downloading, installing or using the content in this repository, you agree the terms of the License laid out in License file.
+
+Note that there are certain restrictions around producing and/or sharing any derivative works with the content in this repository. Please make sure you read the terms of the License before using the content. If you do not agree to all of the terms, do not access, download or use the content in this repository.
+
+Copyright: 2022 NetApp Inc.  
 
 ## Author Information
 NetApp Solutions Engineering Team

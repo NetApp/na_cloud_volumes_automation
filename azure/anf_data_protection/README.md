@@ -1,19 +1,10 @@
 # na_terraform_anf_data_protection
 Terraform template to deploy Azure Netapp Files (ANF) volume on Microsoft Azure with Cross Region Replication using SnapMirror from scratch.
 
-## License
-By accessing, downloading, installing or using the content in this repository, you agree the terms of the License laid out in License file.
-
-Note that there are certain restrictions around producing and/or sharing any derivative works with the content in this repository. Please make sure you read the terms of the License before using the content. If you do not agree to all of the terms, do not access, download or use the content in this repository.
-
-Copyright: 2022 NetApp Inc.  
-
-
 ## Terraform Template for Azure Netapp Files (ANF) Data Protection
 This is an archive of Terraform configuration files to deploy Azure Netapp Files (ANF) with Data Protection using Terraform.
 
 These templates use "azurerm" terraform provider.
-
 
 ## Folder Contents
 This folder contains various deployment and configuration scenarios for Azure Netapp Files volume deployment along with data protection volume.
@@ -72,7 +63,7 @@ In order to run the template:
 
 7. Make a dry run of the configuration to get a preview of all the changes expected by the deployment.
 
-    ```terraform plan"```
+    ```terraform plan```
 
 8. Run the deployment
 
@@ -116,6 +107,12 @@ This template will deploy a single ANF Volume with data protection enabled into 
 | `az_netapp_vol_storage_quota_secondary` | String | (Required) The maximum Storage Quota allowed for a file system in Gigabytes. |
 | `az_dp_replication_frequency` | String | (Required) Replication frequency, supported values are `10minutes`, `hourly`, `daily`, values are case sensitive. |
 
+## License
+By accessing, downloading, installing or using the content in this repository, you agree the terms of the License laid out in License file.
+
+Note that there are certain restrictions around producing and/or sharing any derivative works with the content in this repository. Please make sure you read the terms of the License before using the content. If you do not agree to all of the terms, do not access, download or use the content in this repository.
+
+Copyright: 2022 NetApp Inc.  
 
 
 ## Author Information

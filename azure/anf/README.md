@@ -1,19 +1,11 @@
 # na_terraform_anf
 Terraform template to deploy Azure Netapp Files (ANF) volume on Microsoft Azure from scratch.
 
-## License
-By accessing, downloading, installing or using the content in this repository, you agree the terms of the License laid out in License file.
-
-Note that there are certain restrictions around producing and/or sharing any derivative works with the content in this repository. Please make sure you read the terms of the License before using the content. If you do not agree to all of the terms, do not access, download or use the content in this repository.
-
-Copyright: 2022 NetApp Inc.  
-
 
 ## Terraform Template for Azure Netapp Files (ANF)
 This is an archive of Terraform configuration files to deploy Azure Netapp Files (ANF) using Terraform.
 
 These templates use "azurerm" terraform provider.
-
 
 ## Folder Contents
 This folder contains various deployment and configuration scenarios for Azure Netapp Files volume deployment.
@@ -76,7 +68,7 @@ In order to run the template:
 
 8. Run the deployment
 
-    ```terraform apply"```
+    ```terraform apply```
 
 To delete the deployment
 
@@ -104,7 +96,12 @@ This template will deploy a single ANF Volume into the designated Azure subnet.
 | `az_netapp_vol_security_style` | String | (Optional) Volume security style, accepted values are `Unix` or `Ntfs`. If not provided, single-protocol volume is created defaulting to `Unix` if it is `NFSv3` or `NFSv4.1` volume, if `CIFS`, it will default to `Ntfs`. In a dual-protocol volume, if not provided, its value will be `Ntfs`. |
 | `az_netapp_vol_storage_quota` | String | (Required) The maximum Storage Quota allowed for a file system in Gigabytes. |
 
+## License
+By accessing, downloading, installing or using the content in this repository, you agree the terms of the License laid out in License file.
 
+Note that there are certain restrictions around producing and/or sharing any derivative works with the content in this repository. Please make sure you read the terms of the License before using the content. If you do not agree to all of the terms, do not access, download or use the content in this repository.
+
+Copyright: 2022 NetApp Inc.  
 
 ## Author Information
 NetApp Solutions Engineering Team

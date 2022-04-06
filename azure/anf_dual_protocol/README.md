@@ -1,14 +1,6 @@
 # na_terraform_anf_dual_protocol
 Terraform template to deploy Azure Netapp Files (ANF) volume with dual protocol on Microsoft Azure from scratch.
 
-## License
-By accessing, downloading, installing or using the content in this repository, you agree the terms of the License laid out in License file.
-
-Note that there are certain restrictions around producing and/or sharing any derivative works with the content in this repository. Please make sure you read the terms of the License before using the content. If you do not agree to all of the terms, do not access, download or use the content in this repository.
-
-Copyright: 2022 NetApp Inc.  
-
-
 ## Terraform Template for Azure Netapp Files (ANF) Dual Protocol
 This is an archive of Terraform configuration files to deploy Azure Netapp Files (ANF) with dual protocol using Terraform.
 
@@ -108,8 +100,12 @@ This template will deploy a single ANF Volume with dual protocol enabled into th
 | `az_smb_server_name` | String | (Required) Server Name to create ActiveDirectory object. |
 | `az_smb_dns_servers` | String | (Required) DNS Server IP to create ActiveDirectory object. |
 
+## License
+By accessing, downloading, installing or using the content in this repository, you agree the terms of the License laid out in License file.
 
+Note that there are certain restrictions around producing and/or sharing any derivative works with the content in this repository. Please make sure you read the terms of the License before using the content. If you do not agree to all of the terms, do not access, download or use the content in this repository.
 
+Copyright: 2022 NetApp Inc.  
 
 ## Author Information
 NetApp Solutions Engineering Team
