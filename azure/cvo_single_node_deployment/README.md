@@ -54,7 +54,7 @@ In order to run the template:
 
 2. Navigate to the desired folder
 
-    ```cd na_cloud_volumes_deploy/cvo_single_node_deployment```
+    ```cd na_cloud_volumes_automation/cvo_single_node_deployment```
 
 3. Login to your Azure CLI (Azure CLI must be installed).
 

@@ -52,7 +52,7 @@ In order to run the template:
 
 2. Navigate to the desired folder
 
-    ```cd na_cloud_volumes_deploy/anf_volume_from_snapshot```
+    ```cd na_cloud_volumes_automation/anf_volume_from_snapshot```
 
 3. Login to your Azure CLI (Azure CLI must be installed).
 
