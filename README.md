@@ -21,13 +21,15 @@ These configuration files use NetApp cloud manager terraform provider and cloud 
 ## Requirements
 1. Terraform >= 0.13
 2. Cloud Manager Account
-3. Cloud Provider Account – AWS, Azure
+3. Cloud Provider Account – AWS, Azure, GCP
 4. Host machine (any OS supported by Terraform)
 
 ## Provider documentation
 The documentation of Terraform provider for Cloud Manager is available at: https://registry.terraform.io/providers/NetApp/netapp-cloudmanager/latest/docs
 
 The documentation of Terraform provider for AzureRM is available at: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
+
+The documentation of Terraform provider for NetApp GCP is available at: https://registry.terraform.io/providers/NetApp/netapp-gcp/latest/docs
 
 ### Controlling the provider version
 Note that you can also control the provider version. This is controlled by a required_providers block in your Terraform configuration.
