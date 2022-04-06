@@ -388,5 +388,17 @@ module "gcp_ha" {
 }
 
 module "gcp_cvs_volume" {
+    source = ".//gcp/cvs_volume"
+
+    #cvs details
+    gcp_cvs_name = var.gcp_cvs_name
+    gcp_cvs_project_id = var.gcp_cvs_project_id
+    gcp_cvs_gcp_service_account_path = var.gcp_cvs_gcp_service_account_path
+    gcp_cvs_region = var.gcp_cvs_region
+
+    gcp_cvs_network = var.gcp_cvs_network
+    gcp_cvs_size = var.gcp_cvs_size
+    gcp_cvs_volume_path = var.gcp_cvs_volume_path
+    gcp_cvs_protocol_types = var.gcp_cvs_protocol_types
 
 }

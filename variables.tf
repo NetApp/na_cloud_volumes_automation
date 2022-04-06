@@ -733,3 +733,45 @@ variable "gcp_cvo_gcp_volume_size" {
 variable "gcp_cvo_gcp_volume_size_unit" {
   description = "CVO Volume Size Unit"
   default = ""
+}
+
+
+variable "gcp_cvs_gcp_service_account_path" {
+  description = "Path to the JSON GCP Key"
+  default = ""
+}
+
+variable "gcp_cvs_region" {
+  description = "GCP Region for CVS volume"
+  default = ""
+}
+
+variable "gcp_cvs_name" {
+  description = "Name of the CVS Instance"
+  default = ""
+}
+
+variable "gcp_cvs_project_id" {
+    description = "Project ID for GCP CVS deployment"
+    default = ""
+}
+
+variable "gcp_cvs_network" {
+  description = "GCP VPC Network Name"
+  default = ""
+}
+
+variable "gcp_cvs_size" {
+  description = "CVS Volume Size in GB"
+  default = ""
+}
+
+variable "gcp_cvs_volume_path" {
+  description = "Volume Path"
+  default = ""
+}
+
+variable "gcp_cvs_protocol_types" {
+  description = "Protocol Type For NFS use 'NFSv3' or 'NFSv4' and for SMB use 'CIFS' or 'SMB'"
+  default = ""
+}

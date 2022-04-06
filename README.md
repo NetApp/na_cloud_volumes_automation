@@ -34,6 +34,7 @@ Note that you can also control the provider version. This is controlled by a r
 
 The syntax is as follows:
 
+- Cloudmanager Terraform Provider
 ```
 terraform {
   required_providers {
@@ -45,6 +46,7 @@ terraform {
 }
 ```
 
+- Azure Terraform Provider
 ```
 terraform {
   required_providers {
@@ -55,9 +57,17 @@ terraform {
   }
 }
 ```
-
-Read more on provider version control.
-
+- NetApp GCP provider
+```
+terraform {
+  required_providers {
+    netapp-gcp = {
+      source = "NetApp/netapp-gcp"
+      version = "22.3.0"
+    }
+  }
+}
+```
 
 ## Implementation
 
