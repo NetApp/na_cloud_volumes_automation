@@ -78,4 +78,6 @@ Detailed Steps can be found at: https://docs.netapp.com/us-en/netapp-solutions/a
 For running specific modules, refer to the READMEs available in the respective modules.
 
 ## Author Information
-NetApp Solutions Engineering Team
+
+- [Dhruv Tyagi](mailto:dhruv.tyagi@netapp.com) - NetApp Solutions Engineering Team
+- [Vedant Sethia](mailto:vedant.sethia@netapp.com) - NetApp Solutions Engineering Team

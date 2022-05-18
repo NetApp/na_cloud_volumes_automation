@@ -116,4 +116,6 @@ Copyright: 2022 NetApp Inc.
 
 
 ## Author Information
-NetApp Solutions Engineering Team
+
+- [Dhruv Tyagi](mailto:dhruv.tyagi@netapp.com) - NetApp Solutions Engineering Team
+- [Vedant Sethia](mailto:vedant.sethia@netapp.com) - NetApp Solutions Engineering Team
