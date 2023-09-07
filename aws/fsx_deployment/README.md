@@ -7,7 +7,7 @@ Terraform Documentation: https://registry.terraform.io/providers/NetApp/netapp-c
 In order to run the template:
 1. Clone the repository.
 
-    ```git clone https://github.com/NetApp-Automation/na_cloud_volumes_automation.git```
+    ```git clone https://github.com/NetApp/na_cloud_volumes_automation.git```
 2. Navigate to the desired folder
 
     ```cd na_cloud_volumes_automation/aws/fsx_deployment```
