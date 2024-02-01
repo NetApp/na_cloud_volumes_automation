@@ -81,3 +81,7 @@ For running specific modules, refer to the READMEs available in the respective m
 
 - [Vedant Sethia](mailto:vedant.sethia@netapp.com) - NetApp Solutions Engineering Team
 - Dhruv Tyagi
+
+## Disclaimer
+
+These scripts are basic templates and not production-ready. Test thoroughly before considering deployment.
