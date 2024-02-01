@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
-      version = "2.81.0"
+      version = "3.89.0"
     }
   }
 }
@@ -122,6 +122,10 @@ resource "azurerm_netapp_volume" "example_primary" {
     unix_read_only    = false
     unix_read_write   = true
   }
+
+  lifecycle {
+    prevent_destroy = true
+  }
 }
 
 resource "azurerm_netapp_volume" "example_secondary" {
@@ -151,5 +155,9 @@ resource "azurerm_netapp_volume" "example_secondary" {
     remote_volume_location    = azurerm_resource_group.example.location
     remote_volume_resource_id = azurerm_netapp_volume.example_primary.id
     replication_frequency     = var.az_dp_replication_frequency
+  }
+
+  lifecycle {
+    prevent_destroy = true
   }
 }

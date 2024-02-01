@@ -28,7 +28,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "=2.81.0"
+      version = "3.89.0"
     }
   }
 }
@@ -105,5 +105,5 @@ Copyright: 2022 NetApp Inc.
 
 ## Author Information
 
-- [Dhruv Tyagi](mailto:dhruv.tyagi@netapp.com) - NetApp Solutions Engineering Team
 - [Vedant Sethia](mailto:vedant.sethia@netapp.com) - NetApp Solutions Engineering Team
+- Dhruv Tyagi

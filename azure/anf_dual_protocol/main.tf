@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
-      version = "2.81.0"
+      version = "3.89.0"
     }
   }
 }
@@ -88,5 +88,9 @@ resource "azurerm_netapp_volume" "example" {
     nfsv3_enabled   = true
     nfsv4_enabled   = false
     unix_read_write = true
+  }
+
+  lifecycle {
+    prevent_destroy = true
   }
 }

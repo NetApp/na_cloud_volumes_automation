@@ -42,7 +42,7 @@ terraform {
   required_providers {
     netapp-cloudmanager = {
       source = "NetApp/netapp-cloudmanager"
-      version = "20.10.0"
+      version = ">= 23.0.0"
     }
   }
 }
@@ -54,7 +54,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "=2.81.0"
+      version = ">= 3.89.0"
     }
   }
 }
@@ -65,7 +65,7 @@ terraform {
   required_providers {
     netapp-gcp = {
       source = "NetApp/netapp-gcp"
-      version = "22.3.0"
+      version = ">= 23.0.0"
     }
   }
 }
@@ -79,5 +79,5 @@ For running specific modules, refer to the READMEs available in the respective m
 
 ## Author Information
 
-- [Dhruv Tyagi](mailto:dhruv.tyagi@netapp.com) - NetApp Solutions Engineering Team
 - [Vedant Sethia](mailto:vedant.sethia@netapp.com) - NetApp Solutions Engineering Team
+- Dhruv Tyagi

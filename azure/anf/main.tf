@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
-      version = "2.81.0"
+      version = "3.89.0"
     }
   }
 }
@@ -75,11 +75,15 @@ resource "azurerm_netapp_volume" "example" {
   security_style             = var.az_netapp_vol_security_style
   storage_quota_in_gb        = var.az_netapp_vol_storage_quota
 
-    export_policy_rule {
+  export_policy_rule {
     rule_index        = 1
     allowed_clients   = ["0.0.0.0/0"]
     protocols_enabled = [var.az_netapp_vol_protocol]
     unix_read_only    = false
     unix_read_write   = true
+  }
+
+  lifecycle {
+    prevent_destroy = true
   }
 }
